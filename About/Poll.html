@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cars in Culture Template">
+    <title>Reader Poll</title>
+    <link rel="stylesheet" href="../Styles/normalize.css">
+    <link rel="stylesheet" href="../Styles/main.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html" id="header-logo"><img src="../Images/Logo.png" alt="Company Logo"></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../Sports/Sports.html">Sports & Performance</a>
+                    <ul>
+                        <li><a href="../Sports/Supercars.html">Supercars</a></li>
+                        <li><a href="../Sports/Racing.html">Racing</a></li>
+                        <li><a href="../Sports/CarMeets.html">Car Meets</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Kids/Kids.html">Kids & Pop Culture</a>
+                    <ul>
+                        <li><a href="../Kids/Movies.html">Movies</a></li>
+                        <li><a href="../Kids/Toys.html">Toys</a></li>
+                        <li><a href="../Kids/VideoGames.html">Video Games</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Classic/Classic.html">Classic Cars</a>
+                    <ul>
+                        <li><a href="../Classic/MuscleCars.html">Muscle Cars</a></li>
+                        <li><a href="../Classic/Classics.html">Classics</a></li>
+                        <li><a href="../Classic/CarShows.html">Car Shows</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Utility/Utility.html">Utility & Work</a>
+                    <ul>
+                        <li><a href="../Utility/Trucks.html">Trucks & Construction</a></li>
+                        <li><a href="../Utility/Emergency.html">Emergency Vehicles</a></li>
+                        <li><a href="../Utility/Commuting.html">Commuting & Transportation</a></li>
+                    </ul>
+                </li>
+                <li><a href="About.html">About</a>
+                    <ul>
+                        <li><a href="Passionate.html">Our Passion</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="Poll.html">Reader Poll</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="heading-content">
+            <h1>Reader Poll</h1>
+        </div>
+
+        <div class="content">
+            <div class="content-left">
+                <section class="poll-container">
+                    <h2>What is your favorite car?</h2>
+                    <div class="poll-options" id="pollOptions">
+                        <button type="button" class="poll-btn" onclick="selectOption(this)">Ford Mustang</button>
+                        <button type="button" class="poll-btn" onclick="selectOption(this)">Ford GT40</button>
+                        <button type="button" class="poll-btn" onclick="selectOption(this)">Chevrolet Camaro</button>
+                        <button type="button" class="poll-btn" onclick="selectOption(this)">Chevrolet Corvette</button>
+                        <button type="button" class="poll-btn" onclick="selectOption(this)">Dodge Charger</button>
+                        <button type="button" class="poll-btn" onclick="selectOption(this)">Dodge Challenger</button>
+                        <button type="button" class="poll-btn" onclick="selectOption(this)">Mazda Miata</button>
+                        <button type="button" class="poll-btn" onclick="selectOption(this)">Mazda RX-7</button>
+                        <button type="button" class="poll-btn" onclick="selectOption(this)">Koenigsegg Agera R</button>
+                        <button type="button" class="poll-btn" onclick="selectOption(this)">Lamborghini Huracán</button>
+                        <button type="button" class="poll-btn" onclick="selectOption(this)">Porsche 911</button>
+                        <button type="button" class="poll-btn" onclick="selectOption(this)">LaFerrari</button>
+                    </div>
+                    <button id="submitVote" class="submit-btn" disabled>Submit Vote</button>
+                </section>
+            </div>
+            <div class="content-right">
+                <img src="../Images/image-1.png" alt="" class="content-image" id="resultImage" style="display:none">
+                <p class="image-caption" id="voteCaption"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <a href="../index.html" id="footer-logo"><img src="../Images/Logo.png" alt="Company Logo"></a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../Sports/Sports.html">Sports & Performance</a>
+                        <ul>
+                            <li><a href="../Sports/Supercars.html">Supercars</a></li>
+                            <li><a href="../Sports/Racing.html">Racing</a></li>
+                            <li><a href="../Sports/CarMeets.html">Car Meets</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../Kids/Kids.html">Kids & Pop Culture</a>
+                        <ul>
+                            <li><a href="../Kids/Movies.html">Movies</a></li>
+                            <li><a href="../Kids/Toys.html">Toys</a></li>
+                            <li><a href="../Kids/VideoGames.html">Video Games</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../Classic/Classic.html">Classic Cars</a>
+                        <ul>
+                            <li><a href="../Classic/MuscleCars.html">Muscle Cars</a></li>
+                            <li><a href="../Classic/Classics.html">Classics</a></li>
+                            <li><a href="../Classic/CarShows.html">Car Shows</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../Utility/Utility.html">Utility & Work</a>
+                        <ul>
+                            <li><a href="../Utility/Trucks.html">Trucks & Construction</a></li>
+                            <li><a href="../Utility/Emergency.html">Emergency Vehicles</a></li>
+                            <li><a href="../Utility/Commuting.html">Commuting & Transportation</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="About.html">About</a>
+                        <ul>
+                            <li><a href="Passionate.html">Our Passion</a></li>
+                            <li><a href="AboutUs.html">About Us</a></li>
+                            <li><a href="Poll.html">Reader Poll</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <p>&copy; 2026 Michael Newman & William Dunwoody, Group 2, CIS 207</p>
+    </footer>
+
+    <script>
+        const carImages = {
+            "Ford Mustang": "../Images/About/Poll/Cars/mustang.jpg",
+            "Ford GT40": "../Images/About/Poll/Cars/gt40.jpg",
+            "Chevrolet Camaro": "../Images/About/Poll/Cars/camaro.jpg",
+            "Chevrolet Corvette": "../Images/About/Poll/Cars/corvette.jpg",
+            "Dodge Charger": "../Images/About/Poll/Cars/charger.jpg",
+            "Dodge Challenger": "../Images/About/Poll/Cars/challenger.jpg",
+            "Mazda Miata": "../Images/About/Poll/Cars/miata.jpg",
+            "Mazda RX-7": "../Images/About/Poll/Cars/rx7.jpg",
+            "Koenigsegg Agera R": "../Images/About/Poll/Cars/agera.jpg",
+            "Lamborghini Huracán": "../Images/About/Poll/Cars/huracan.jpg",
+            "Porsche 911": "../Images/About/Poll/Cars/porsche911.jpg",
+            "LaFerrari": "../Images/About/Poll/Cars/laferrari.jpg"
+        };
+
+    function selectOption(element) {
+        const buttons = document.querySelectorAll('.poll-btn');
+        buttons.forEach(btn => btn.classList.remove('selected'));
+        element.classList.add('selected');
+        const submitBtn = document.getElementById('submitVote');
+        submitBtn.disabled = false;
+        submitBtn.classList.add('ready');
+    }
+
+    document.getElementById('submitVote').addEventListener('click', function() {
+        const selectedValue = document.querySelector('.poll-btn.selected').innerText;
+        const img = document.getElementById('resultImage');
+        if (carImages[selectedValue]) {
+            img.src = carImages[selectedValue];
+            img.alt = selectedValue;
+            img.style.display = 'block';
+        }
+        document.getElementById('voteCaption').textContent = "You voted for: " + selectedValue;
+    });
+    </script>
+</body>
+</html>
